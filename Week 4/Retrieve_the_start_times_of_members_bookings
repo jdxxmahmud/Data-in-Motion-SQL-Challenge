@@ -1,0 +1,8 @@
+-- Problem Link: https://pgexercises.com/questions/joins/simplejoin.html
+
+SELECT b.starttime
+FROM cd.members cm
+	INNER JOIN cd.bookings b
+	ON cm.memid = b.memid
+WHERE cm.firstname = 'David' 
+	  AND cm.surname = 'Farrell';
