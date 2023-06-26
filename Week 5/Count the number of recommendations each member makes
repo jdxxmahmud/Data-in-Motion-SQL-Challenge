@@ -1,0 +1,8 @@
+-- Week 5: Problem 2
+-- Problem Link: https://pgexercises.com/questions/aggregates/count3.html
+
+SELECT recommendedby, count(*) as count
+FROM cd.members
+WHERE recommendedby IS NOT NULL
+GROUP BY recommendedby
+ORDER BY recommendedby
