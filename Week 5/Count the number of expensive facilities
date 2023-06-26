@@ -1,0 +1,6 @@
+-- Week 5: Problem 1
+-- Problem Link: https://pgexercises.com/questions/aggregates/count2.html
+
+SELECT COUNT(*)
+FROM cd.facilities
+WHERE guestcost >= 10
